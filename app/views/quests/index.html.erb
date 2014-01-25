@@ -20,7 +20,7 @@
     </div>
     <div class="col-xs-8">
 	<h3><%= link_to @activeQuest.name, @activeQuest %></h3>
-	<p><%= truncate(activeQuest.description, :length => 200, :separator => ' ')  %></p>
+	<p><%= truncate(@activeQuest.description, :length => 200, :separator => ' ')  %></p>
     </div>
 </div>
 
