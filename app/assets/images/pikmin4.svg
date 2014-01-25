@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="600"
+   height="300"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
-   sodipodi:docname="pikmin2.svg"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="pikmin4.svg"
    inkscape:export-filename="/Users/barbarakohler/Desktop/GlobalGameJam2014/pikmin.png"
    inkscape:export-xdpi="56.949234"
    inkscape:export-ydpi="56.949234">
@@ -28,13 +28,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="508.4275"
-     inkscape:cy="679.92933"
+     inkscape:cx="370.5477"
+     inkscape:cy="228.73878"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="602"
-     inkscape:window-height="804"
+     inkscape:window-height="756"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -48,17 +48,18 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-752.36218)">
     <g
        id="g3018"
-       transform="translate(438,106)">
+       transform="matrix(0.38790498,0,0,0.38790498,267.86023,805.33612)">
       <path
          transform="translate(-163,99)"
          d="m 531.42857,343.79074 c 0,74.16396 -60.12176,134.28572 -134.28572,134.28572 -74.16395,0 -134.28572,-60.12176 -134.28572,-134.28572 0,-74.16395 60.12177,-134.28572 134.28572,-134.28572 74.16396,0 134.28572,60.12177 134.28572,134.28572 z"
@@ -73,7 +74,7 @@
          transform="translate(-179,117)"
          id="g3813">
         <path
-           d="m 531.42857,343.79074 a 134.28572,134.28572 0 1 1 -268.57144,0 134.28572,134.28572 0 1 1 268.57144,0 z"
+           d="m 531.42857,343.79074 c 0,74.16396 -60.12176,134.28572 -134.28572,134.28572 -74.16395,0 -134.28572,-60.12176 -134.28572,-134.28572 0,-74.16395 60.12177,-134.28572 134.28572,-134.28572 74.16396,0 134.28572,60.12177 134.28572,134.28572 z"
            sodipodi:ry="134.28572"
            sodipodi:rx="134.28572"
            sodipodi:cy="343.79074"
@@ -151,9 +152,9 @@
        sodipodi:rx="18.5"
        sodipodi:ry="18.5"
        d="m 294,236.86218 a 18.5,18.5 0 1 1 -37,0 18.5,18.5 0 1 1 37,0 z"
-       transform="translate(52,9)" />
+       transform="matrix(0.38790498,0,0,0.38790498,118.12891,767.70934)" />
     <path
-       transform="matrix(1.3658537,0,0,1.3658537,15.636249,-124.61274)"
+       transform="matrix(0.52982146,0,0,0.52982146,104.02323,715.88029)"
        d="m 294,236.86218 a 18.5,18.5 0 1 1 -37,0 18.5,18.5 0 1 1 37,0 z"
        sodipodi:ry="18.5"
        sodipodi:rx="18.5"
@@ -164,7 +165,7 @@
        sodipodi:type="arc" />
     <g
        id="g4099"
-       transform="matrix(1.3244406,0,0,1.3244406,-135.51281,-463.15635)">
+       transform="matrix(0.51375711,0,0,0.51375711,45.391751,584.55755)">
       <g
          transform="matrix(1.42579,0,0,1.4121699,-169.40519,176.38976)"
          id="g3996">
@@ -178,7 +179,7 @@
     </g>
     <g
        id="g4280"
-       transform="translate(-434,-72)">
+       transform="matrix(0.38790498,0,0,0.38790498,-70.39291,736.28903)">
       <path
          transform="matrix(1.0293717,0,0,1.0293717,261.53342,163.7338)"
          d="m 531.42857,343.79074 c 0,74.16396 -60.12176,134.28572 -134.28572,134.28572 -74.16395,0 -134.28572,-60.12176 -134.28572,-134.28572 0,-74.16395 60.12177,-134.28572 134.28572,-134.28572 74.16396,0 134.28572,60.12177 134.28572,134.28572 z"
@@ -245,13 +246,13 @@
          transform="matrix(-0.85780976,0,0,-0.85780976,1038.0272,765.0562)" />
     </g>
     <path
-       style="fill:#07f500;fill-opacity:1;stroke:#016c01;stroke-width:9.89999962;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       d="m 502,442.36218 156,-104 L 857.99999,452.36217 666,470.36218 z"
+       style="fill:#07f500;fill-opacity:1;stroke:#016c01;stroke-width:3.84025908;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 292.68615,935.81268 60.51317,-40.34211 77.58099,44.22116 -74.47774,6.98229 z"
        id="path4247"
        inkscape:connector-curvature="0" />
     <g
        id="g4313"
-       transform="matrix(0.4643345,0,0,0.4643345,551.63378,168.91278)">
+       transform="matrix(0.18011766,0,0,0.18011766,311.93933,829.7403)">
       <g
          id="g4291"
          transform="translate(-500,-574)">
