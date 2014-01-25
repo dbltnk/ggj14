@@ -22,8 +22,6 @@
         <td><%= @activeQuest.description %></td>
         <td><%= @activeQuest.imgurl %></td>
         <td><%= link_to 'Show', @activeQuest %></td>
-        <td><%= link_to 'Edit', edit_quest_path(@activeQuest) %></td>
-        <td><%= link_to 'Destroy', @activeQuest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	<td><%= link_to 'Cancel', quests_cancel_path(@activeQuest) %></td>
       </tr>
   </tbody>
@@ -53,8 +51,6 @@
         <td><%= quest.description %></td>
         <td><%= quest.imgurl %></td>
         <td><%= link_to 'Show', quest %></td>
-        <td><%= link_to 'Edit', edit_quest_path(quest) %></td>
-        <td><%= link_to 'Destroy', quest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	<td><%= link_to 'Accept', quests_accept_path(quest) %></td>
       </tr>
     <% end %>
@@ -63,8 +59,32 @@
 </table>
 <% end %> 
 
-<br>
-
+<h2>All quests (Admin only):</h2>
 <%= link_to 'New Quest', new_quest_path %>
 
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Imgurl</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <% @quests.each do |quest| %>
+      <tr>
+        <td><%= quest.name %></td>
+        <td><%= quest.description %></td>
+        <td><%= quest.imgurl %></td>
+        <td><%= link_to 'Show', quest %></td>
+        <td><%= link_to 'Edit', edit_quest_path(quest) %></td>
+        <td><%= link_to 'Destroy', quest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    
+  </tbody>  
+</table>
