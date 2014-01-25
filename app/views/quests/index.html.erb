@@ -44,8 +44,10 @@
     </tr>
   </thead>
 
+<% @t = Time.now.to_i - Time.now.to_i%120 %>
+
   <tbody>
-    <% @quests.each do |quest| %>
+    <% @quests.shuffle(random: Random.new(@t))[1..3].each do |quest| %>
       <tr>
         <td><%= quest.name %></td>
         <td><%= quest.description %></td>
@@ -56,6 +58,7 @@
 	<td><%= link_to 'Accept', quests_accept_path(quest) %></td>
       </tr>
     <% end %>
+    
   </tbody>  
 </table>
 <% end %> 
