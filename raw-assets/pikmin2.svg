@@ -19,7 +19,15 @@
    inkscape:export-xdpi="56.949234"
    inkscape:export-ydpi="56.949234">
   <defs
-     id="defs4" />
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3085" />
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -33,10 +41,10 @@
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1106"
-     inkscape:window-height="797"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="652"
+     inkscape:window-height="745"
+     inkscape:window-x="751"
+     inkscape:window-y="37"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -48,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -85,7 +93,7 @@
        transform="translate(-166.1255,99)">
       <path
          transform="matrix(1.178731,0,0,1.178731,-83.44262,-70.277934)"
-         d="m 391.42858,332.36218 a 28.571428,28.571428 0 1 1 -57.14286,0 28.571428,28.571428 0 1 1 57.14286,0 z"
+         d="m 391.42858,332.36218 c 0,15.77957 -12.79187,28.57143 -28.57143,28.57143 -15.77957,0 -28.57143,-12.79186 -28.57143,-28.57143 0,-15.77956 12.79186,-28.57143 28.57143,-28.57143 15.77956,0 28.57143,12.79187 28.57143,28.57143 z"
          sodipodi:ry="28.571428"
          sodipodi:rx="28.571428"
          sodipodi:cy="332.36218"
@@ -95,7 +103,7 @@
          sodipodi:type="arc" />
       <path
          transform="matrix(0.83333334,0,0,-0.83333334,57.073616,586.1645)"
-         d="m 378.8072,329.09296 a 24.243662,24.243662 0 1 1 -48.48732,0 24.243662,24.243662 0 1 1 48.48732,0 z"
+         d="m 378.8072,329.09296 c 0,13.3894 -10.85426,24.24366 -24.24366,24.24366 -13.38941,0 -24.24366,-10.85426 -24.24366,-24.24366 0,-13.38941 10.85425,-24.24367 24.24366,-24.24367 13.3894,0 24.24366,10.85426 24.24366,24.24367 z"
          sodipodi:ry="24.243662"
          sodipodi:rx="24.243662"
          sodipodi:cy="329.09296"
