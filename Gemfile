@@ -19,7 +19,7 @@ gem 'actionpack', '4.0.2'
 gem 'activemodel', '4.0.2'
 gem "faraday", "~> 0.8.0"
 gem "disqussion", "~> 0.0.7"
-
+gem "bootstrap-sass", "~> 3.0.3.0"
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
