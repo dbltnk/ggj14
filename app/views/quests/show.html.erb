@@ -15,11 +15,22 @@
   <img src="<%= @quest.imgurl %>" alt="rss feed" />
 </p>
 
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+<a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal" pi:pinit:url="http://www.addthis.com/features/pinterest" pi:pinit:media="http://www.addthis.com/cms-content/images/features/pinterest-lg.png"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52e40c0a5c2cef8d"></script>
+<!-- AddThis Button END -->
+
  <% if cookies[:current_quest] then @activeQuest = Quest.find(cookies[:current_quest_id]) end %>
 
 <table>
   <tbody>
      <tr>
+        <td><%= link_to 'Back', quests_path %></td>
 	<% if @activeQuest then %>
 	<td><%= link_to 'Cancel', quests_cancel_path(@activeQuest) %></td>
 	<td><%= link_to 'Done', quests_done_path(@activeQuest) %></td>
@@ -28,7 +39,6 @@
 			<td><%= link_to 'Accept', quests_accept_path(@quest) %></td>
 		<% end %>
 	<% end %>
-	<td><%= link_to 'Back', quests_path %></td>
      </tr>
   </tbody>
 </table>
