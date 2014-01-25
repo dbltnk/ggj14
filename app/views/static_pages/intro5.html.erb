@@ -1,6 +1,29 @@
-<h2>Share your thoughts</h2>
-<%= image_tag("/assets/tutorial5.png", :alt => "an image") %>
-<h3>No matter if you succeeded or failed, write aboutyour experience.</h3>
-<h3>Read how others felt.</h3>
-<%= link_to(image_tag("/assets/arrow_left.png", :alt => "Intro 4"), "/static_pages/intro4.html") %>
-<%= link_to(image_tag("/assets/arrow_go.png", :alt => "Quests Overview"), "/quests/") %>
+<div class="row headline">
+    <div class="col-xs-12">
+	<h2>Share your thoughts</h2>
+    </div>
+</div>
+
+<div class="row img_center">
+    <div class="col-xs-12">
+	<%= image_tag("/assets/tutorial5.png", :alt => "an image", :class => "img-responsive") %>
+    </div>
+</div>
+
+<div class="row text">
+    <div class="col-xs-12">
+	<h4>No matter if you succeeded or failed, write about your experience.</h4>
+	<h4>Read how others felt.</h4>
+    </div>
+</div>
+
+<div class="row links">
+    <div class="col-xs-2">
+	<%= link_to(image_tag("/assets/arrow_left.png", :alt => "Intro 4"), "/static_pages/intro4.html") %>
+    </div>
+    <div class="col-xs-8">
+    </div>
+    <div class="col-xs-2">
+	<%= link_to(image_tag("/assets/arrow_go.png", :alt => "Quests Overview"), "/quests/") %>
+    </div>
+</div>
