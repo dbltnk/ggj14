@@ -14,7 +14,7 @@
     </div>
 </div>
 
-<div class="row big_button active_quest">	
+<div class="row big_button active_quest" onclick="window.location.href='/quests/<%= @activeQuest.id %>'">	
     <div class="col-xs-4">
 	<%= link_to(image_tag(@activeQuest.imgurl, :alt => @activeQuest.name), @activeQuest) %>
     </div>

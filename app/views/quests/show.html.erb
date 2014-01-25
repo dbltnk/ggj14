@@ -9,7 +9,7 @@
         
         <div class="row img_center">
             <div class="col-xs-12">
-                <img src="<%= @quest.imgurl %>" class="img-responsive">
+                <img src="<%= @quest.imgurl.blank? ? "/assets/default.svg" : @quest.imgurl %>" class="img-responsive">
             </div>
         </div>
         
