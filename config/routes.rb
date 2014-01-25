@@ -4,7 +4,12 @@ Ggj14::Application.routes.draw do
   get "static_pages/intro3"
   get "static_pages/intro4"
   get "static_pages/intro5"
+  
   resources :quests
+  
+  get '/accept/:id', to: 'quests#accept', as: "quests_accept"
+  get '/cancel/:id', to: 'quests#cancel', as: "quests_cancel"
+  get '/done/:id', to: 'quests#done', as: "quests_done"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

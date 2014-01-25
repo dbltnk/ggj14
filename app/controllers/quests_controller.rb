@@ -11,6 +11,48 @@ class QuestsController < ApplicationController
   # GET /quests/1.json
   def show
   end
+  
+  def accept
+#	  puts YAML::dump(@id)
+#	  puts YAML::dump(@quest)
+	@quest = Quest.find(params[:id])
+	cookies.permanent[:current_quest]=@quest
+	cookies.permanent[:current_quest_id]=@quest.id
+	cookies.permanent[:current_quest_name]=@quest.name
+	render "show"
+end
+
+  def cancel
+	@quest = Quest.find(params[:id])
+	if cookies[:current_quest] then
+		cookies.delete :current_quest
+	end
+	if cookies[:current_quest_id] then
+		cookies.delete :current_quest_id
+	end
+	if cookies[:current_quest_name] then
+		cookies.delete :current_quest_name
+	end
+	render "show"
+end
+
+  def done
+	@quest = Quest.find(params[:id])
+	if cookies[:current_quest_id] then
+		cookies.permanent[cookies[:current_quest_id]]="done"
+	end
+
+	if cookies[:current_quest] then
+		cookies.delete :current_quest
+	end
+	if cookies[:current_quest_id] then
+		cookies.delete :current_quest_id
+	end
+	if cookies[:current_quest_name] then
+		cookies.delete :current_quest_name
+	end
+	render "show"
+end
 
   # GET /quests/new
   def new

@@ -1,4 +1,62 @@
-<h1>Listing quests</h1>
+<h1>Quests</h1>
+
+ <% if cookies[:current_quest] then @activeQuest = Quest.find(cookies[:current_quest_id]) end %>
+
+<% if cookies[:current_quest] then %>
+<h2>Your active quest:</h2>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>      
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @activeQuest.name %></td>
+        <td><%= @activeQuest.imgurl %></td>
+        <td><%= link_to 'Show', @activeQuest %></td>
+	<td><%= link_to 'Cancel', quests_cancel_path(@activeQuest) %></td>
+	<td><%= link_to 'Done', quests_done_path(@activeQuest) %></td>
+      </tr>
+  </tbody>
+</table>
+<% else %>
+
+<h2>Available quests:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+
+<% @t = Time.now.to_i - Time.now.to_i%120 %>
+
+  <tbody>
+    <% @quests.shuffle(random: Random.new(@t))[1..3].each do |quest| %>
+	<% if cookies[quest.id] != "done" then %>
+      <tr>
+        <td><%= quest.name %></td>
+        <td><%= quest.imgurl %></td>
+        <td><%= link_to 'Show', quest %></td>
+      </tr>
+       <% end %>
+    <% end %>
+    
+  </tbody>  
+</table>
+<% end %> 
+
+<h2>All quests (Admin only):</h2>
+<%= link_to 'New Quest', new_quest_path %>
 
 <table>
   <thead>
@@ -23,9 +81,6 @@
         <td><%= link_to 'Destroy', quest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-  </tbody>
+    
+  </tbody>  
 </table>
-
-<br>
-
-<%= link_to 'New Quest', new_quest_path %>
