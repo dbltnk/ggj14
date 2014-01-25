@@ -7,19 +7,17 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Imgurl</th>
       <th></th>
       <th></th>
       <th></th>
+      <th></th>
+      <th></th>      
     </tr>
   </thead>
 
   <tbody>
       <tr>
         <td><%= @activeQuest.name %></td>
-        <td><%= @activeQuest.description %></td>
         <td><%= @activeQuest.imgurl %></td>
         <td><%= link_to 'Show', @activeQuest %></td>
 	<td><%= link_to 'Cancel', quests_cancel_path(@activeQuest) %></td>
@@ -35,11 +33,8 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Description</th>
-      <th>Imgurl</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Image</th>
+      <th>Link</th>
     </tr>
   </thead>
 
@@ -50,10 +45,8 @@
 	<% if cookies[quest.id] != "done" then %>
       <tr>
         <td><%= quest.name %></td>
-        <td><%= quest.description %></td>
         <td><%= quest.imgurl %></td>
         <td><%= link_to 'Show', quest %></td>
-	<td><%= link_to 'Accept', quests_accept_path(quest) %></td>
       </tr>
        <% end %>
     <% end %>
