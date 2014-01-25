@@ -1,11 +1,16 @@
 Ggj14::Application.routes.draw do
+  get "static_pages/intro1"
+  get "static_pages/intro2"
+  get "static_pages/intro3"
+  get "static_pages/intro4"
+  get "static_pages/intro5"
   resources :quests
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'static_pages#intro1'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
