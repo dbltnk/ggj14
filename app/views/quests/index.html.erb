@@ -1,4 +1,36 @@
-<h1>Listing quests</h1>
+<h1>Quests</h1>
+
+ <% if cookies[:current_quest] then @activeQuest = Quest.find(cookies[:current_quest_id]) end %>
+
+<% if cookies[:current_quest] then %>
+<h2>Your active quest:</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Imgurl</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @activeQuest.name %></td>
+        <td><%= @activeQuest.description %></td>
+        <td><%= @activeQuest.imgurl %></td>
+        <td><%= link_to 'Show', @activeQuest %></td>
+        <td><%= link_to 'Edit', edit_quest_path(@activeQuest) %></td>
+        <td><%= link_to 'Destroy', @activeQuest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<td><%= link_to 'Cancel', quests_cancel_path(@activeQuest) %></td>
+      </tr>
+  </tbody>
+</table>
+<% else %>
+
+<h2>Available quests:</h2>
 
 <table>
   <thead>
@@ -22,11 +54,11 @@
         <td><%= link_to 'Edit', edit_quest_path(quest) %></td>
         <td><%= link_to 'Destroy', quest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	<td><%= link_to 'Accept', quests_accept_path(quest) %></td>
-	<td><%= link_to 'Cancel', quests_cancel_path(quest) %></td>
       </tr>
     <% end %>
-  </tbody>
+  </tbody>  
 </table>
+<% end %> 
 
 <br>
 
