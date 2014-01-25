@@ -14,13 +14,13 @@
     </div>
 </div>
 
-<div class="row big_button active_quest">	
+<div class="row big_button active_quest" onclick="window.location.href='/quests/<%= @activeQuest.id %>'">	
     <div class="col-xs-4">
-	<%= link_to(image_tag(@activeQuest.imgurl, :alt => @activeQuest.name), @activeQuest) %>
+	<%= link_to(image_tag(@activeQuest.imgurl.blank? ? "/assets/default.svg" : @activeQuest.imgurl, :alt => @activeQuest.name), @activeQuest) %>
     </div>
     <div class="col-xs-8">
 	<h3><%= link_to @activeQuest.name, @activeQuest %></h3>
-	<p><%= truncate(activeQuest.description, :length => 200, :separator => ' ')  %></p>
+	<p><%= truncate(@activeQuest.description, :length => 200, :separator => ' ')  %></p>
     </div>
 </div>
 
@@ -36,9 +36,9 @@
 
 <% @quests.shuffle(random: Random.new(@t))[1..3].each do |quest| %>
 	<% if !(cookies[quest.id] == "done") then %>
-		<div class="row big_button">	
+		<div class="row big_button" onclick="window.location.href='/quests/<%= quest.id %>'">	
 		    <div class="col-xs-4">
-			<%= link_to(image_tag(quest.imgurl, :alt => quest.name), quest) %>
+			<%= link_to(image_tag(quest.imgurl.blank? ? "/assets/default.svg" : quest.imgurl, :alt => quest.name), quest) %>
 		    </div>
 		    <div class="col-xs-8">
 			<h3><%= link_to quest.name, quest %></h3>
@@ -58,9 +58,9 @@
     
 <% @quests.each do |quest| %>
 	<% if (cookies[quest.id] == "done") then %>
-		<div class="row big_button done_quest">	
+		<div class="row big_button done_quest" onclick="window.location.href='/quests/<%= quest.id %>'">	
 		    <div class="col-xs-4">
-			<%= link_to(image_tag(quest.imgurl, :alt => quest.name), quest) %>
+			<%= link_to(image_tag(quest.imgurl.blank? ? "/assets/default.svg" : quest.imgurl, :alt => quest.name), quest) %>
 		    </div>
 		    <div class="col-xs-8">
 			<h3><%= link_to quest.name, quest %></h3>

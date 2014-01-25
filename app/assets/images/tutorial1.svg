@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="600"
+   height="300"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
+   inkscape:version="0.48.2 r9819"
    sodipodi:docname="tutorial2-1.svg"
    inkscape:export-filename="/Users/barbarakohler/Documents/workspace/ggj14/app/assets/images/tutorial1.png"
    inkscape:export-xdpi="56.949234"
@@ -27,14 +27,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="238.90398"
-     inkscape:cy="692.51382"
+     inkscape:zoom="1"
+     inkscape:cx="353.77875"
+     inkscape:cy="117.65005"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1327"
-     inkscape:window-height="821"
+     inkscape:window-width="1280"
+     inkscape:window-height="756"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0" />
@@ -46,19 +46,21 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-752.36218)">
     <g
-       id="g4095">
+       id="g4095"
+       transform="matrix(0.38247499,0,0,0.38247499,217.33595,816.74421)">
       <path
          transform="translate(-163,99)"
-         d="m 531.42857,343.79074 a 134.28572,134.28572 0 1 1 -268.57144,0 134.28572,134.28572 0 1 1 268.57144,0 z"
+         d="m 531.42857,343.79074 c 0,74.16396 -60.12176,134.28572 -134.28572,134.28572 -74.16395,0 -134.28572,-60.12176 -134.28572,-134.28572 0,-74.16395 60.12177,-134.28572 134.28572,-134.28572 74.16396,0 134.28572,60.12177 134.28572,134.28572 z"
          sodipodi:ry="134.28572"
          sodipodi:rx="134.28572"
          sodipodi:cy="343.79074"
@@ -75,7 +77,7 @@
          sodipodi:cy="343.79074"
          sodipodi:rx="134.28572"
          sodipodi:ry="134.28572"
-         d="m 531.42857,343.79074 a 134.28572,134.28572 0 1 1 -268.57144,0 134.28572,134.28572 0 1 1 268.57144,0 z" />
+         d="m 531.42857,343.79074 c 0,74.16396 -60.12176,134.28572 -134.28572,134.28572 -74.16395,0 -134.28572,-60.12176 -134.28572,-134.28572 0,-74.16395 60.12177,-134.28572 134.28572,-134.28572 74.16396,0 134.28572,60.12177 134.28572,134.28572 z" />
       <g
          transform="translate(-166.1255,99)"
          id="g3839">
@@ -108,7 +110,7 @@
          sodipodi:cy="332.36218"
          sodipodi:rx="28.571428"
          sodipodi:ry="28.571428"
-         d="m 391.42858,332.36218 a 28.571428,28.571428 0 1 1 -57.14286,0 28.571428,28.571428 0 1 1 57.14286,0 z"
+         d="m 391.42858,332.36218 c 0,15.77957 -12.79187,28.57143 -28.57143,28.57143 -15.77957,0 -28.57143,-12.79186 -28.57143,-28.57143 0,-15.77956 12.79186,-28.57143 28.57143,-28.57143 15.77956,0 28.57143,12.79187 28.57143,28.57143 z"
          transform="matrix(-1.178731,0,0,1.178731,717.85382,28.722066)" />
       <path
          sodipodi:type="arc"
@@ -118,7 +120,7 @@
          sodipodi:cy="329.09296"
          sodipodi:rx="24.243662"
          sodipodi:ry="24.243662"
-         d="m 378.8072,329.09296 a 24.243662,24.243662 0 1 1 -48.48732,0 24.243662,24.243662 0 1 1 48.48732,0 z"
+         d="m 378.8072,329.09296 c 0,13.3894 -10.85426,24.24366 -24.24366,24.24366 -13.38941,0 -24.24366,-10.85426 -24.24366,-24.24366 0,-13.38941 10.85425,-24.24367 24.24366,-24.24367 13.3894,0 24.24366,10.85426 24.24366,24.24367 z"
          transform="matrix(-0.83333334,0,0,-0.83333334,591.33758,683.1645)" />
     </g>
     <path
@@ -130,9 +132,9 @@
        sodipodi:rx="18.5"
        sodipodi:ry="18.5"
        d="m 294,236.86218 a 18.5,18.5 0 1 1 -37,0 18.5,18.5 0 1 1 37,0 z"
-       transform="translate(22,39)" />
+       transform="matrix(0.38247499,0,0,0.38247499,225.7504,831.66068)" />
     <path
-       transform="matrix(1.3658537,0,0,1.3658537,-59.618585,-110.16909)"
+       transform="matrix(0.52240488,0,0,0.52240488,194.53333,774.60728)"
        d="m 294,236.86218 a 18.5,18.5 0 1 1 -37,0 18.5,18.5 0 1 1 37,0 z"
        sodipodi:ry="18.5"
        sodipodi:rx="18.5"
@@ -143,7 +145,7 @@
        sodipodi:type="arc" />
     <g
        id="g4099"
-       transform="matrix(1.3244406,0,0,1.3244406,-254.60826,-536.39394)">
+       transform="matrix(0.50656541,0,0,0.50656541,119.95465,611.58692)">
       <g
          transform="matrix(1.42579,0,0,1.4121699,-169.40519,176.38976)"
          id="g3996">
@@ -241,7 +243,7 @@
       </g>
     </g>
     <path
-       transform="matrix(-1,0,0,1,468.55346,106.88225)"
+       transform="matrix(-0.38247499,0,0,0.38247499,396.54594,857.62396)"
        d="m 294,236.86218 a 18.5,18.5 0 1 1 -37,0 18.5,18.5 0 1 1 37,0 z"
        sodipodi:ry="18.5"
        sodipodi:rx="18.5"
@@ -259,10 +261,10 @@
        sodipodi:rx="18.5"
        sodipodi:ry="18.5"
        d="m 294,236.86218 a 18.5,18.5 0 1 1 -37,0 18.5,18.5 0 1 1 37,0 z"
-       transform="matrix(-1.3658537,0,0,1.3658537,523.30199,-52.186333)" />
+       transform="matrix(-0.52240488,0,0,0.52240488,417.48587,796.78419)" />
     <g
        id="g4713"
-       transform="translate(46.669048,-104.6518)">
+       transform="matrix(0.38247499,0,0,0.38247499,235.1857,776.71749)">
       <g
          id="g4060"
          transform="matrix(-1.8883742,0,0,1.8703351,880.43338,-131.65634)">
