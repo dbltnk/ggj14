@@ -15,6 +15,28 @@
   <img src="<%= @quest.imgurl %>" alt="rss feed" />
 </p>
 
+ <% if cookies[:current_quest] then @activeQuest = Quest.find(cookies[:current_quest_id]) end %>
+
+<table>
+  <tbody>
+     <tr>
+	<% if @activeQuest then %>
+	<td><%= link_to 'Cancel', quests_cancel_path(@activeQuest) %></td>
+	<td><%= link_to 'Done', quests_done_path(@activeQuest) %></td>
+	<% else %>
+		<% if cookies[@quest.id] != "done" then %>
+			<td><%= link_to 'Accept', quests_accept_path(@quest) %></td>
+		<% end %>
+	<% end %>
+	<td><%= link_to 'Back', quests_path %></td>
+     </tr>
+  </tbody>
+</table>
+
+<% if cookies[@quest.id] == "done" then %>
+
+<h2>How was your experience?</h2>
+
 <%
 require "rubygems"
 require "disqussion"
@@ -50,6 +72,4 @@ Disqussion::Client.threads.create("ggj14","Hello World")
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     
-
-<%= link_to 'Edit', edit_quest_path(@quest) %> |
-<%= link_to 'Back', quests_path %>
+<% end %>
