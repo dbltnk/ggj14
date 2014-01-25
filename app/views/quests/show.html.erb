@@ -15,6 +15,26 @@
   <img src="<%= @quest.imgurl %>" alt="rss feed" />
 </p>
 
+<%
+require "rubygems"
+require "disqussion"
+
+# Certain methods require authentication. To get your Disqus credentials,
+# register an app at http://disqus.com/api/applications/
+Disqussion.configure do |config|
+  config.api_key = "Q6nCuIRKHoFeTGp2GOa4oMX6yXoNoUelOjG6WkKPkeuqjXTEG3robwAC9OVNoEHB"
+  config.api_secret = "NdQsRBn0sckM0D607ZKm2pcqQR754FmWA5Wn05TFc3oETpBqFztDIlpKYlmxhdxm"
+end
+%>
+
+<%
+=begin %>
+Disqussion::Client.threads.list(:forum => "ggj14")
+Disqussion::Client.posts.create("hello world", :thread => 2170251836)
+Disqussion::Client.threads.create("ggj14","Hello World") 
+<%
+=end %>
+
   <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
