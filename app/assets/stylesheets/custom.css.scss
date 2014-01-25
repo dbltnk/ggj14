@@ -1,1 +1,55 @@
 @import "bootstrap";
+
+.root {
+    max-width: 800px;
+}
+
+.headline{
+    margin: 0 0 10px 0;
+}
+
+.headline>div{
+    text-align: center;
+}
+
+.headline h3{
+    margin: -10px 0 0 0;
+}
+
+.center>div{
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+.img_center img {
+    width: 100%;
+}
+
+.text {
+    padding: 10px 0 0 0;
+}
+
+.links {
+    padding: 10px 0 0 0;
+}
+
+.links div:nth-of-type(2) {
+    text-align: center;
+}
+
+.links div:nth-of-type(3) {
+    text-align: right;
+}
+
+.big_button img {
+    width: 100%;
+}
+
+.big_button {
+    margin: 10px 0 0 0;
+    background: #DDD;
+}
+
+.active_quest  {
+	background-color:#040;
+}

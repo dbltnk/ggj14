@@ -1,7 +1,30 @@
-<h2>Do it!</h2>
-<%= image_tag("/assets/tutorial1.png", :alt => "an image") %>
-<h3>Do not spend more then 5 EUR a day.</h3>
-<h4>How long can you keep it up?</h4>
-<h4>How do you feel?</h4>
-<%= link_to(image_tag("/assets/arrow_left.png", :alt => "Intro 3"), "/static_pages/intro3.html") %>
-<%= link_to(image_tag("/assets/arrow_right.png", :alt => "Intro 5"), "/static_pages/intro5.html") %>
+<div class="row headline">
+    <div class="col-xs-12">
+	<h2>Do it!</h2>
+    </div>
+</div>
+
+<div class="row img_center">
+    <div class="col-xs-12">
+	<%= image_tag("/assets/tutorial4.png", :alt => "an image", :class => "img-responsive") %>
+    </div>
+</div>
+
+<div class="row text">
+    <div class="col-xs-12">
+     Do not spend more then 5 EUR a day.<br>
+     How long can you keep it up?<br>
+     How do you feel?
+    </div>
+</div>
+
+<div class="row links">
+    <div class="col-xs-2">
+	<%= link_to(image_tag("/assets/arrow_left.png", :alt => "Intro 3"), "/static_pages/intro3.html") %>
+    </div>
+    <div class="col-xs-8">
+    </div>
+    <div class="col-xs-2">
+	<%= link_to(image_tag("/assets/arrow_right.png", :alt => "Intro 5"), "/static_pages/intro5.html") %>
+    </div>
+</div>

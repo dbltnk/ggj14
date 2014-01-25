@@ -1,5 +1,28 @@
-<h2>We want to give you the opportunity to find out!</h2>
-<%= image_tag("/assets/tutorial1.png", :alt => "an image") %>
-<p></p>
-<%= link_to(image_tag("/assets/arrow_left.png", :alt => "Intro 1"), "/static_pages/intro1.html") %>
-<%= link_to(image_tag("/assets/arrow_right.png", :alt => "Intro 3"), "/static_pages/intro3.html") %>
+<div class="row headline">
+    <div class="col-xs-12">
+	<h2>We want to give you the opportunity to find out!</h2>
+    </div>
+</div>
+
+<div class="row img_center">
+    <div class="col-xs-12">
+	<%= image_tag("/assets/tutorial2.png", :alt => "an image", :class => "img-responsive") %>
+    </div>
+</div>
+
+<div class="row text">
+    <div class="col-xs-12">
+     REPLACE ME!
+    </div>
+</div>
+
+<div class="row links">
+    <div class="col-xs-2">
+	<%= link_to(image_tag("/assets/arrow_left.png", :alt => "Intro 1"), "/static_pages/intro1.html") %>
+    </div>
+    <div class="col-xs-8">
+    </div>
+    <div class="col-xs-2">
+	<%= link_to(image_tag("/assets/arrow_right.png", :alt => "Intro 3"), "/static_pages/intro3.html") %>
+    </div>
+</div>
