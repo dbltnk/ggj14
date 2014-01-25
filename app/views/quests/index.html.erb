@@ -21,6 +21,7 @@
         <td><%= link_to 'Show', quest %></td>
         <td><%= link_to 'Edit', edit_quest_path(quest) %></td>
         <td><%= link_to 'Destroy', quest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<td><%= link_to 'Accept', quests_accept_path(quest) %></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,3 +30,5 @@
 <br>
 
 <%= link_to 'New Quest', new_quest_path %>
+
+

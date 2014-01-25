@@ -1,3 +1,11 @@
+
+<p><%= cookies[:current_quest_url] %></p>
+
+<p><%= request.original_url  %></p>
+
+<p><%= if cookies[:current_quest_url] == request.original_url then cookies[:current_quest_name] else "nope" end %></p>
+
+
 <p id="notice"><%= notice %></p>
 
 <p>
