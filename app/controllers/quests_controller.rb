@@ -19,6 +19,17 @@ class QuestsController < ApplicationController
 	cookies.permanent[:current_quest_id]=@quest.id
 	cookies.permanent[:current_quest_name]=@quest.name
 	render "show"
+end
+
+  def cancel
+	@quest = Quest.find(params[:id])
+	if cookies[:current_quest_id] then
+		cookies.delete :current_quest_id
+	end
+	if cookies[:current_quest_name] then
+		cookies.delete :current_quest_name
+	end
+	render "show"
   end
 
   # GET /quests/new

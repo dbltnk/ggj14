@@ -8,6 +8,7 @@ Ggj14::Application.routes.draw do
   resources :quests
   
   get '/accept/:id', to: 'quests#accept', as: "quests_accept"
+  get '/cancel/:id', to: 'quests#cancel', as: "quests_cancel"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
