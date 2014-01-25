@@ -20,6 +20,7 @@
     </div>
     <div class="col-xs-8">
 	<h3><%= link_to @activeQuest.name, @activeQuest %></h3>
+	<p><%= truncate(activeQuest.description, :length => 200, :separator => ' ')  %></p>
     </div>
 </div>
 
@@ -41,6 +42,7 @@
 		    </div>
 		    <div class="col-xs-8">
 			<h3><%= link_to quest.name, quest %></h3>
+			<p><%= truncate(quest.description, :length => 200, :separator => ' ')  %></p>
 		    </div>
 		</div>
        <% end %>
@@ -62,6 +64,7 @@
 		    </div>
 		    <div class="col-xs-8">
 			<h3><%= link_to quest.name, quest %></h3>
+			<p><%= truncate(quest.description, :length => 200, :separator => ' ')  %></p>
 		    </div>
 		</div>
        <% end %>
@@ -104,7 +107,7 @@
     <% @quests.each do |quest| %>
       <tr>
         <td><%= quest.name %></td>
-        <td><%= quest.description.html_safe %></td>
+        <td><%= truncate(quest.description, :length => 35, :separator => ' ')  %></td>
         <td><%= quest.imgurl %></td>
         <td><%= link_to 'Show', quest %></td>
         <td><%= link_to 'Edit', edit_quest_path(quest) %></td>
