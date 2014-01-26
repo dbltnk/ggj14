@@ -12,7 +12,9 @@ class QuestsController < ApplicationController
   def show
 	@quest = Quest.find(params[:id])
 	cookies.permanent[:visited]="done"
-	cookies.permanent[@quest.name]="visited"
+	if !cookies.permanent[@quest.id] then
+		cookies.permanent[@quest.id]="visited"
+	end
   end
   
   def accept
