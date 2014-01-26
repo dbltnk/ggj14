@@ -15,14 +15,16 @@ class QuestsController < ApplicationController
   def accept
 #	  puts YAML::dump(@id)
 #	  puts YAML::dump(@quest)
+	@quests = Quest.all
 	@quest = Quest.find(params[:id])
 	cookies.permanent[:current_quest]=@quest
 	cookies.permanent[:current_quest_id]=@quest.id
 	cookies.permanent[:current_quest_name]=@quest.name
-	render "show"
+	render "index"
 end
 
   def cancel
+	@quests = Quest.all
 	@quest = Quest.find(params[:id])
 	if cookies[:current_quest] then
 		cookies.delete :current_quest
@@ -33,7 +35,7 @@ end
 	if cookies[:current_quest_name] then
 		cookies.delete :current_quest_name
 	end
-	render "show"
+	render "index"
 end
 
   def done
