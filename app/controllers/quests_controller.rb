@@ -10,6 +10,9 @@ class QuestsController < ApplicationController
   # GET /quests/1
   # GET /quests/1.json
   def show
+	@quest = Quest.find(params[:id])
+	cookies.permanent[:visited]="done"
+	cookies.permanent[@quest.name]="visited"
   end
   
   def accept

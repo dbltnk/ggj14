@@ -79,6 +79,33 @@
        <% end %>
     <% end %>
     
+<% if cookies[:visited] then %>
+<div class="row center">
+    <div class="col-xs-12">
+	<h3>Recent challenges</h3>
+	<p>You've recently looked at these challenges.</p>
+    </div>
+</div>
+    
+<% @quests.each do |quest| %>
+	<% if (cookies[quest.name]="visited") then %>
+		<div class="row big_button visited_quest" onclick="window.location.href='/quests/<%= quest.id %>'">	
+		    <div class="col-xs-4">
+			<%= link_to(image_tag(quest.imgurl.blank? ? "/assets/default.svg" : quest.imgurl, :alt => quest.name), quest) %>
+		    </div>
+		    <div class="col-xs-8">
+			<h3><%= link_to quest.name, quest %></h3>
+			<p><%= truncate(sanitize(quest.description, :tags=>[]), :length => 150, :separator => ' ')  %></p>
+			<p><%= link_to "discuss", @activeQuest, :class => "floatr" %></p>
+		    </div>
+		</div>
+       <% end %>
+    <% end %>
+<% end %>
+    
+    
+    
+    
 <div class="row center">
     <div class="col-xs-12">
 	<p><a href ="http://globalgamejam.org/2014/games/someone-elses-shoes">Created by Barbara, Sebi & Alex for Global Game Jam 2014</a></p>
