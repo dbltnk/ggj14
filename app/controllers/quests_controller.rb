@@ -38,10 +38,12 @@ end
 
   def done
 	@quest = Quest.find(params[:id])
+	
 	if cookies[:current_quest_id] then
+		cookies.permanent[:done]="yeah"
 		cookies.permanent[cookies[:current_quest_id]]="done"
 	end
-
+	
 	if cookies[:current_quest] then
 		cookies.delete :current_quest
 	end

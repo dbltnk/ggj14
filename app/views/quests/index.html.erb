@@ -50,11 +50,14 @@
 
 <% end %>
 
+
+<% if cookies[:done] then %>
 <div class="row center">
     <div class="col-xs-12">
 	<h3>Done</h3>
     </div>
 </div>
+<% end %>
     
 <% @quests.each do |quest| %>
 	<% if (cookies[quest.id] == "done") then %>
