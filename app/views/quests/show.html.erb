@@ -2,8 +2,20 @@
 
 <div class="row headline">
             <div class="col-xs-12">
-                <h2>In someone else's shoes - Global Game Jam 2014</h2>
-                <h3><%= @quest.name %></h3>
+                <h2>Challenge: <%= @quest.name %></h3>
+            </div>
+        </div>
+	
+        <div class="row links">
+            <div class="col-xs-4">
+                <%= link_to 'Back to Overview', quests_path %>
+            </div>
+            <div class="col-xs-4">
+		<%= link_to 'Cancel Challenge', quests_cancel_path(@activeQuest) if @activeQuest %>
+            </div>
+            <div class="col-xs-4">
+                <%= link_to 'Mark as Completed', quests_done_path(@activeQuest) if @activeQuest %>
+               <%= link_to 'Accept Challenge', quests_accept_path(@quest) if (!@activeQuest && cookies[@quest.id] != "done") %>		
             </div>
         </div>
         
@@ -30,19 +42,6 @@
 		</div>
 		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52e40c0a5c2cef8d"></script>
 		<!-- AddThis Button END -->
-            </div>
-        </div>
-        
-        <div class="row links">
-            <div class="col-xs-2">
-                <%= link_to 'Back', quests_path %>
-            </div>
-            <div class="col-xs-8">
-		<%= link_to 'Cancel', quests_cancel_path(@activeQuest) if @activeQuest %>
-            </div>
-            <div class="col-xs-2">
-                <%= link_to 'Done', quests_done_path(@activeQuest) if @activeQuest %>
-               <%= link_to 'Accept', quests_accept_path(@quest) if (!@activeQuest && cookies[@quest.id] != "done") %>		
             </div>
         </div>
    
