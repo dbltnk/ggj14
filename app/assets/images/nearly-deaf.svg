@@ -11,7 +11,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="600"
-   height="300"
+   height="400"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.2 r9819"
@@ -91,9 +91,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="335.79903"
-     inkscape:cy="116.15598"
+     inkscape:zoom="0.7071068"
+     inkscape:cx="245.78653"
+     inkscape:cy="86.50879"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -121,7 +121,7 @@
      transform="translate(0,-752.36218)">
     <g
        id="g5503"
-       transform="matrix(0.41775159,0.14174081,-0.14174081,0.41775159,220.30066,772.33359)">
+       transform="matrix(0.64798889,0.21985905,-0.21985905,0.64798889,159.43853,747.45618)">
       <path
          transform="translate(-55.51977,-77.7767)"
          d="m 531.42857,343.79074 c 0,74.16396 -60.12176,134.28572 -134.28572,134.28572 -74.16395,0 -134.28572,-60.12176 -134.28572,-134.28572 0,-74.16395 60.12177,-134.28572 134.28572,-134.28572 74.16396,0 134.28572,60.12177 134.28572,134.28572 z"
@@ -185,9 +185,9 @@
     </g>
     <g
        id="g4099"
-       transform="matrix(1.3244406,0,0,1.3244406,-165.51281,-433.15635)" />
+       transform="matrix(2.0543855,0,0,2.0543855,-439.01005,-1122.4208)" />
     <g
-       transform="matrix(0.44114266,0,0,0.44114266,104.09755,724.07426)"
+       transform="matrix(0.68427159,0,0,0.68427159,-20.808119,672.59947)"
        id="g5499">
       <path
          d="m 531.42857,343.79074 c 0,74.16396 -60.12176,134.28572 -134.28572,134.28572 -74.16395,0 -134.28572,-60.12176 -134.28572,-134.28572 0,-74.16395 60.12177,-134.28572 134.28572,-134.28572 74.16396,0 134.28572,60.12177 134.28572,134.28572 z"
@@ -202,7 +202,7 @@
     </g>
     <g
        id="g5527"
-       transform="matrix(0.44114266,0,0,0.44114266,132.8054,805.79898)">
+       transform="matrix(0.68427159,0,0,0.68427159,23.721617,799.36549)">
       <path
          sodipodi:nodetypes="csccc"
          inkscape:connector-curvature="0"
@@ -222,15 +222,15 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:114.59026337px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
-       x="447.41559"
-       y="882.89606"
+       style="font-size:177.74490356px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+       x="454.20587"
+       y="910.17889"
        id="text3771"
        sodipodi:linespacing="125%"
        transform="matrix(1.1189478,0.24586613,-0.1873274,0.85253534,0,0)"><tspan
          sodipodi:role="line"
          id="tspan3773"
-         x="447.41559"
-         y="882.89606">?</tspan></text>
+         x="454.20587"
+         y="910.17889">?</tspan></text>
   </g>
 </svg>

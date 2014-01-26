@@ -11,10 +11,10 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="600"
-   height="300"
+   height="400"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
+   inkscape:version="0.48.2 r9819"
    sodipodi:docname="being-old.svg"
    inkscape:export-filename="/Users/barbarakohler/Desktop/GlobalGameJam2014/pikmin.png"
    inkscape:export-xdpi="56.949234"
@@ -121,10 +121,10 @@
      transform="translate(0,-752.36218)">
     <g
        id="g4099"
-       transform="matrix(1.3244406,0,0,1.3244406,-165.51281,-433.15635)" />
+       transform="matrix(1.6670669,0,0,1.6670669,-302.66131,-732.63526)" />
     <g
        id="g5422"
-       transform="matrix(0.21550259,0,0,0.21550259,540.92779,747.72482)">
+       transform="matrix(0.27125205,0,0,0.27125205,586.53201,753.73407)">
       <path
          sodipodi:type="arc"
          style="fill:#1a1a1a;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -191,7 +191,7 @@
     </g>
     <g
        id="g3032"
-       transform="matrix(1.4143968,0,0,1.4143968,-95.146379,-363.82886)">
+       transform="matrix(1.7802943,0,0,1.7802943,-214.09143,-645.37309)">
       <g
          transform="matrix(0.21550259,0,0,0.21550259,244.18356,791.20297)"
          id="g3813">
