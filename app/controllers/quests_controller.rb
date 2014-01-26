@@ -65,7 +65,8 @@ end
 
   # GET /quests/new
   def new
-    @quest = Quest.new
+	return
+      @quest = Quest.new
   end
 
   # GET /quests/1/edit
@@ -75,6 +76,7 @@ end
   # POST /quests
   # POST /quests.json
   def create
+      return
     @quest = Quest.new(quest_params)
 
     respond_to do |format|
@@ -91,6 +93,7 @@ end
   # PATCH/PUT /quests/1
   # PATCH/PUT /quests/1.json
   def update
+      return
     respond_to do |format|
       if @quest.update(quest_params)
         format.html { redirect_to @quest, notice: 'Quest was successfully updated.' }
@@ -105,6 +108,7 @@ end
   # DELETE /quests/1
   # DELETE /quests/1.json
   def destroy
+      return
     @quest.destroy
     respond_to do |format|
       format.html { redirect_to quests_url }
