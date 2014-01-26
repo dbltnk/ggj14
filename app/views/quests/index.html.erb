@@ -96,7 +96,7 @@
 		    <div class="col-xs-8">
 			<h3><%= link_to quest.name, quest %></h3>
 			<p><%= truncate(sanitize(quest.description, :tags=>[]), :length => 150, :separator => ' ')  %></p>
-			<p><%= link_to "discuss", @activeQuest, :class => "floatr" %></p>
+			<p><%= link_to "more", @activeQuest, :class => "floatr" %></p>
 		    </div>
 		</div>
        <% end %>
