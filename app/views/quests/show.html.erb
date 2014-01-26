@@ -54,6 +54,19 @@
             </div>
         </div>        
 	
+	<div class="row links">
+            <div class="col-xs-4">
+                <%= link_to 'Back to Overview', quests_path %>
+            </div>
+            <div class="col-xs-4">
+		<%= link_to 'Cancel Challenge', quests_cancel_path(@activeQuest) if @activeQuest %>
+            </div>
+            <div class="col-xs-4">
+                <%= link_to 'Mark as Completed', quests_done_path(@activeQuest) if @activeQuest %>
+               <%= link_to 'Accept Challenge', quests_accept_path(@quest) if (!@activeQuest && cookies[@quest.id] != "done") %>		
+            </div>
+        </div>
+	
 	<!-- AddThis Smart Layers BEGIN -->
 <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-52e4e3b00602caf8"></script>
